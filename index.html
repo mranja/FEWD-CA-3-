@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEAL MARVEL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="getRandomMeal()">
+
+<header>
+
+
+    <div class="nav-center">
+
+        <ul class="nav-links">
+            <li ><a id="small" href="index.html">Home</a></li>
+            <li class="dropdown" >
+                <a href="#" class="dropbtn " id="small" >Categories</a>
+                <div class="dropdown-content" id="categoryDropdown">
+                    <a href="#meal-container" onclick="filterByCategory('Beef')">Beef</a>
+                    <a href="#meal-container" onclick="filterByCategory('Chicken')">Chicken</a>
+                    <a href="#meal-container" onclick="filterByCategory('Dessert')">Dessert</a>
+                    <a href="#meal-container" onclick="filterByCategory('Lamb')">Lamb</a>
+                    <a href="#meal-container" onclick="filterByCategory('Miscellaneous')">Miscellaneous</a>
+                    <a href="#meal-container" onclick="filterByCategory('Pasta')">Pasta</a>
+                    <a href="#meal-container" onclick="filterByCategory('Pork')">Pork</a>
+                    <a href="#meal-container" onclick="filterByCategory('Seafood')">Seafood</a>
+                    <a href="#meal-container" onclick="filterByCategory('Side')">Side</a>
+                    <a href="#meal-container" onclick="filterByCategory('Starter')">Starter</a>
+                    <a href="#meal-container" onclick="filterByCategory('Vegan')">Vegan</a>
+                    <a href="#meal-container" onclick="filterByCategory('Vegetarian')">Vegetarian</a>
+                    <a href="#meal-container" onclick="filterByCategory('Breakfast')">Breakfast</a>
+                    <a href="#meal-container" onclick="filterByCategory('Goat')">Goat</a>
+                
+                </div>
+        
+            </li>
+            
+        </ul>
+        <h4 id="title">MEAL MARVEL</h4>
+        
+            <div class="nav-right">
+               
+                <a  href="#" onclick="showHelp()">Help</a>
+                <a href="https://github.com/mranja?tab=repositories" target="_blank">About Us</a>
+            </div>
+        
+        
+        
+        
+    </div>
+   
+</header>
+<div class="header-content">
+    <div id="Desicprtion">"MEAL MARVEL," is a platform that allows users to discover a variety of tasty meals. 
+        The user can click on the random meal generated on the homepage to get details about it, 
+        including ingredients and instructions. Additionally, users can search for specific meal categories, 
+        and the website dynamically updates the content based on the selected category. 
+        The navigation bar includes options for Home, Categories (with dropdown functionality), 
+        and links for Help and About Us. The design features a clean and user-friendly interface, 
+        making it easy for visitors to explore and find meal inspiration.
+        <br>
+    
+        </div>
+       
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a meal category...">
+        <a href="#meal-container"><button onclick="searchMealCategories()">Search</button></a>
+        
+    </div>
+    <span id="span">Click It --> Cook It --> Eat It!!</span>
+</div>
+
+<div id="random-meal-container" class="random-container"></div>
+<div id="meal-container" class="grid-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
