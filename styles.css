@@ -130,6 +130,7 @@ button:hover {
     background-color: white;
     text-align: center;
     cursor: pointer;
+    height: 350px;
 }
 
 .grid-item img {
